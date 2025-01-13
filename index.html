@@ -43,6 +43,15 @@
             bottom: 0;
             width: 100%;
         }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -51,28 +60,28 @@
     </header>
 
     <nav>
-        <a href="#home">What to expect/why should you start in the first place.</a>
-        <a href="#about">What will be broken</a>
-        <a href="#contact">who to contact when something goes wrong</a>
+        <a href="#home" title="Why start Linux from Scratch?">What to expect</a>
+        <a href="#about" title="Common issues in LFS">What will break</a>
+        <a href="#contact" title="Get help for LFS issues">Who to contact</a>
     </nav>
 
     <div class="container">
         <section id="home">
             <h1>What to expect when starting Linux from Scratch</h1>
-            <p>Linux from scratch is a unique way to learn the linux commands and what they do, it is also a great way to learn how linux works.</p>
-            <p> This is a Very Very long project, if you are new to linux, do not expect this to take over night, for me it took 3 months to get half way and to this day I am still not finished with it, so take your time, be patient with yourself, and for some packages like GCC, feel free to walk away and come back in 3 hours, for me in Chroot GCC took 15 hours to complete its installation, so dont feel like you have to be with it through the whole process, take breaks every so often </p> 
+            <p>Linux from scratch is a unique way to learn the Linux commands and what they do. It is also a great way to learn how Linux works.</p>
+            <p>This is a very long project. If you are new to Linux, do not expect this to take overnight. For me, it took 3 months to get halfway, and to this day I am still not finished. So take your time, be patient, and for some packages like GCC, feel free to walk away and come back in a few hours. For me in Chroot, GCC took 15 hours to complete its installation. So don't feel like you have to watch the process the whole time—take breaks!</p> 
         </section>
 
         <section id="about">
             <h2>What will break when doing Linux from Scratch</h2>
-            <p>95 percent of breaks that happen in this project happen by mistyping a command, so make sure you double check the command you are typing before clicking enter</p>
+            <p>95% of breaks that happen in this project are due to mistyping a command. Double-check the command you are typing before hitting enter.</p>
         </section>
 
         <section id="contact">
             <h1>Contact</h1>
-            <h2>If you have any issues consult the Linux from scratch documentation </h2>
-            <p>Documentation: https://www.linuxfromscratch.org/lfs/view/stable/  </p>
-            <p2>If you run into any errors: https://www.linuxfromscratch.org/lfs/faq.html</p2>
+            <h2>For any issues, consult the Linux from Scratch documentation:</h2>
+            <p>Documentation: <a href="https://www.linuxfromscratch.org/lfs/view/stable/" target="_blank">LFS Documentation</a></p>
+            <p>If you run into errors, check the <a href="https://www.linuxfromscratch.org/lfs/faq.html" target="_blank">LFS FAQ</a>.</p>
         </section>
     </div>
 
@@ -81,4 +90,3 @@
     </footer>
 </body>
 </html>
-
